@@ -1,0 +1,44 @@
+[mui-context-menu] {
+  position: fixed;
+  z-index: 9999;
+  background-color: var(--color-surface-container);
+  border-radius: var(--radius-md); /* Using dense tokens */
+  box-shadow: var(--shadow-3);
+  padding: var(--spacing-4) 0;
+  min-width: 160px;
+  animation: context-menu-fade 150ms var(--transition-standard-fast-effects);
+
+  /* Styles for items inside the menu (e.g. buttons) */
+  & button {
+    width: 100%;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    padding: var(--spacing-6) var(--spacing-16);
+    font: var(--font-label-lg);
+    color: var(--color-on-surface);
+    cursor: pointer;
+    text-align: left;
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--color-on-surface) 8%, transparent);
+    }
+
+    &:active {
+      background-color: color-mix(in srgb, var(--color-on-surface) 12%, transparent);
+    }
+  }
+}
+
+@keyframes context-menu-fade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,30 @@
+@layer tokens {
+  :root {
+    
+    /* 1. SPACINGS - Reducing White Space under the mouse cursor */
+    --spacing-16: 12px;  /* Reduced from 16px - perfect for card padding and containers */
+    --spacing-24: 16px;  /* Zmniejszone z 24px - for larger section spacing */
+    --spacing-48: 24px;  /* Zmniejszone z 48px - on desktop 48px is a giant hole */
+    --spacing-64: 32px;  /* Zmniejszone z 64px */
+
+    /* 2. RADIUS - Stiffening for desktop interface */
+    --radius-lg: 12px;      /* Reduced from 16px */
+    --radius-lg-inc: 14px;  /* Reduced from 20px */
+    --radius-xl: 16px;      /* Reduced from 28px - 28px looks too bubbley on the monitor */
+    --radius-xl-inc: 20px;  /* Reduced from 32px */
+    --radius-xxl: 24px;     /* Reduced 48px - 48px we leave it only for large panels */
+
+    /* 3. TYPOGRAPHY - More compact fonts for working with data /* Reducing the line-height and keeping the same sizes for large texts */
+    --font-display-lg: 400 48px/56px var(--font-family);
+    --font-display-md: 400 36px/44px var(--font-family);
+    --font-display-sm: 400 32px/40px var(--font-family);
+
+    --font-headline-lg: 400 28px/36px var(--font-family);
+    --font-headline-md: 400 24px/32px var(--font-family);
+    --font-headline-sm: 400 20px/28px var(--font-family);
+
+    --font-title-lg: 400 18px/24px var(--font-family); /* Reduced from 22px */
+    
+    /* Body and Label remain unchanged (14px and 12px) because they are already perfect for desktop */
+  }
+}
